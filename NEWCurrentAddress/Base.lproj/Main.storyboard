@@ -25,7 +25,7 @@
                                 </constraints>
                                 <state key="normal" title="Get Current Address"/>
                                 <connections>
-                                    <segue destination="i2v-lp-2aC" kind="show" identifier="pushToDetail" id="5df-r2-lZg"/>
+                                    <segue destination="i2v-lp-2aC" kind="show" identifier="Placemark" id="5df-r2-lZg"/>
                                 </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="98J-kt-fCv">
@@ -292,7 +292,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iL7-dH-nmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="794" y="99"/>
+            <point key="canvasLocation" x="831" y="97"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gdo-1c-GIY">

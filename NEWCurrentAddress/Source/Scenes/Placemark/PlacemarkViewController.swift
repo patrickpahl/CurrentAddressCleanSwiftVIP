@@ -57,6 +57,12 @@ class PlacemarkViewController: UITableViewController, PlacemarkDisplayLogic
         doSomething()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+
+        showPhysicalAddress()
+    }
+
     // MARK: Do something
 
     //@IBOutlet weak var nameTextField: UITextField!
