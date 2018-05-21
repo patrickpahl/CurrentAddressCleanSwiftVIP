@@ -22,7 +22,7 @@ class MapInteractor: NSObject, MapBusinessLogic, MapDataStore, CLLocationManager
     var currentLocation: MKUserLocation?
     var centerMapFirstTime = false
     let geocoder = CLGeocoder()
-    var placemark: CLPlacemark?
+    var placemark: MKPlacemark?
 
     // MARK: Do something
 
@@ -94,7 +94,10 @@ class MapInteractor: NSObject, MapBusinessLogic, MapDataStore, CLLocationManager
             geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
                 var response: Map.getCurrentAddress.Response
                 if let placemark = placemarks?.first {
-                    self.placemark = placemark
+                    /// Convert from CLPlacemark to MKPlacemark
+                    if let coordinate = placemark.location?.coordinate, let addressDictionary = placemark.addressDictionary as? [String: Any] {
+                        self.placemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDictionary)
+                    }
                     response = Map.getCurrentAddress.Response(success: true)
                 } else {
                     response = Map.getCurrentAddress.Response(success: false)
