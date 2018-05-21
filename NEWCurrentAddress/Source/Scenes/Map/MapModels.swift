@@ -64,10 +64,10 @@ enum Map
 
         }
         struct Response {
-
+            var coordinate: CLLocationCoordinate2D
         }
         struct ViewModel {
-
+            var coordinate: CLLocationCoordinate2D
         }
     }
 
