@@ -5,21 +5,21 @@ protocol PlacemarkDisplayLogic: class {
     func displayShowPhysicalAddress(viewModel: Placemark.ShowPhysicalAddress.ViewModel)
 }
 
-class PlacemarkViewController: UITableViewController, PlacemarkDisplayLogic
-{
+class PlacemarkViewController: UITableViewController, PlacemarkDisplayLogic {
+
+    let cellReuseIdentifier = "placemarkCell"
     var interactor: PlacemarkBusinessLogic?
     var router: (NSObjectProtocol & PlacemarkRoutingLogic & PlacemarkDataPassing)?
+    var viewModel: Placemark.ShowPhysicalAddress.ViewModel?
 
     // MARK: Object lifecycle
 
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
-    {
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setup()
     }
 
-    required init?(coder aDecoder: NSCoder)
-    {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
@@ -57,6 +57,12 @@ class PlacemarkViewController: UITableViewController, PlacemarkDisplayLogic
         doSomething()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+
+        showPhysicalAddress()
+    }
+
     // MARK: Do something
 
     //@IBOutlet weak var nameTextField: UITextField!
@@ -77,6 +83,7 @@ class PlacemarkViewController: UITableViewController, PlacemarkDisplayLogic
 
     func displayShowPhysicalAddress(viewModel: Placemark.ShowPhysicalAddress.ViewModel) {
 
+        /*
         var cell = tableView(tableView, cellForRowAt: IndexPath(row: 0, section: 0))
         cell.detailTextLabel?.text = viewModel.placemark.thoroughfare
 
@@ -103,8 +110,68 @@ class PlacemarkViewController: UITableViewController, PlacemarkDisplayLogic
 
         cell = tableView(tableView, cellForRowAt: IndexPath(row: 8, section: 0))
         cell.detailTextLabel?.text = viewModel.placemark.isoCountryCode
-
+         */
+        self.viewModel = viewModel
         tableView.reloadData()
+    }
+
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 9
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
+
+        guard let viewModel = self.viewModel else { return UITableViewCell() }
+
+        if indexPath.row == 0 {
+            cell.textLabel?.text = "Thoroughfare"
+            cell.detailTextLabel?.text = viewModel.placemark.thoroughfare
+        }
+
+        if indexPath.row == 1 {
+            cell.textLabel?.text = "SubThoroughfare"
+            cell.detailTextLabel?.text = viewModel.placemark.subThoroughfare
+        }
+
+        if indexPath.row == 2 {
+            cell.textLabel?.text = "Locality"
+            cell.detailTextLabel?.text = viewModel.placemark.locality
+        }
+
+        if indexPath.row == 3 {
+            cell.textLabel?.text = "SubLocality"
+            cell.detailTextLabel?.text = viewModel.placemark.subLocality
+        }
+
+        if indexPath.row == 4 {
+            cell.textLabel?.text = "AdministrativeArea"
+            cell.detailTextLabel?.text = viewModel.placemark.administrativeArea
+        }
+
+        if indexPath.row == 5 {
+            cell.textLabel?.text = "SubAdministrativeArea"
+            cell.detailTextLabel?.text = viewModel.placemark.subAdministrativeArea
+        }
+
+        if indexPath.row == 6 {
+            cell.textLabel?.text = "PostalCode"
+            cell.detailTextLabel?.text = viewModel.placemark.postalCode
+        }
+
+        if indexPath.row == 7 {
+            cell.textLabel?.text = "CountryCode"
+            cell.detailTextLabel?.text = viewModel.placemark.countryCode
+        }
+
+        if indexPath.row == 8 {
+            cell.textLabel?.text = "ISO CountryCode"
+            cell.detailTextLabel?.text = viewModel.placemark.isoCountryCode
+        }
+
+        return cell
     }
 
 }

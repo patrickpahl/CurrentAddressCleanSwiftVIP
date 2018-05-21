@@ -11,6 +11,7 @@ protocol MapBusinessLogic {
 
 protocol MapDataStore {
     //var name: String { get set }
+    var placemark: MKPlacemark? { get }
 }
 
 class MapInteractor: NSObject, MapBusinessLogic, MapDataStore, CLLocationManagerDelegate, MKMapViewDelegate {

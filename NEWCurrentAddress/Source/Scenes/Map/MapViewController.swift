@@ -46,6 +46,7 @@ class MapViewController: UIViewController, MapDisplayLogic {
 
     // MARK: Routing
 
+    /// *** Must change the segue identifier in the story board to name of the scene, i.e. Placemark for this to work automatically
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let scene = segue.identifier {
             let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")

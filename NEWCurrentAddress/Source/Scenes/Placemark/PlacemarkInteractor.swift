@@ -1,22 +1,21 @@
 import UIKit
 import MapKit
 
-protocol PlacemarkBusinessLogic
-{
+protocol PlacemarkBusinessLogic {
     func doSomething(request: Placemark.Something.Request)
     func showPhysicalAddress(request: Placemark.ShowPhysicalAddress.Request)
 }
 
-protocol PlacemarkDataStore
-{
+protocol PlacemarkDataStore {
     //var name: String { get set }
+    var placemark: MKPlacemark! { get set }
 }
 
 class PlacemarkInteractor: PlacemarkBusinessLogic, PlacemarkDataStore {
     var presenter: PlacemarkPresentationLogic?
     var worker: PlacemarkWorker?
     //var name: String = ""
-    var placemark: MKPlacemark?
+    var placemark: MKPlacemark!
 
     // MARK: Do something
 
