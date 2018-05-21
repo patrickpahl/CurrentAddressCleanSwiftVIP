@@ -71,4 +71,16 @@ enum Map
         }
     }
 
+    enum getCurrentAddress {
+        struct Request {
+
+        }
+        struct Response {
+            var success: Bool
+        }
+        struct ViewModel {
+            var success: Bool
+        }
+    }
+
 }

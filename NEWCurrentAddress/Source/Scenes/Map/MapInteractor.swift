@@ -6,6 +6,7 @@ protocol MapBusinessLogic {
     func requestForCurrentLocation(request: Map.RequestForCurrentLocation.Request)
     func getCurrentLocation(request: Map.GetCurrentLocation.Request)
     func centerMap(request: Map.CenterMap.Request)
+    func getCurrentAddress(request: Map.getCurrentAddress.Request)
 }
 
 protocol MapDataStore {
@@ -20,6 +21,8 @@ class MapInteractor: NSObject, MapBusinessLogic, MapDataStore, CLLocationManager
     let locationManager = CLLocationManager()
     var currentLocation: MKUserLocation?
     var centerMapFirstTime = false
+    let geocoder = CLGeocoder()
+    var placemark: CLPlacemark?
 
     // MARK: Do something
 
@@ -82,7 +85,22 @@ class MapInteractor: NSObject, MapBusinessLogic, MapDataStore, CLLocationManager
             let response = Map.CenterMap.Response(coordinate: currentLocation.coordinate)
             presenter?.presentCenterMap(response: response)
             centerMapFirstTime = true
+        }
+    }
 
+    func getCurrentAddress(request: Map.getCurrentAddress.Request) {
+
+        if let location = currentLocation?.location {
+            geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
+                var response: Map.getCurrentAddress.Response
+                if let placemark = placemarks?.first {
+                    self.placemark = placemark
+                    response = Map.getCurrentAddress.Response(success: true)
+                } else {
+                    response = Map.getCurrentAddress.Response(success: false)
+                }
+                self.presenter?.presentCurrentAddress(response: response)
+            }
         }
     }
 

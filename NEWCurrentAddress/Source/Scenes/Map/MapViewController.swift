@@ -6,6 +6,7 @@ protocol MapDisplayLogic: class {
     func displayRequestForCurrentLocation(viewModel: Map.RequestForCurrentLocation.ViewModel)
     func displayGetCurrentLocation(viewModel: Map.GetCurrentLocation.ViewModel)
     func displayCenterMap(viewModel: Map.CenterMap.ViewModel)
+    func displayCurrentAddress(viewModel: Map.getCurrentAddress.ViewModel)
 }
 
 class MapViewController: UIViewController, MapDisplayLogic {
@@ -111,9 +112,8 @@ class MapViewController: UIViewController, MapDisplayLogic {
 
         if viewModel.success {
             centerMap()
-            // TODO: center map and reverse geocode
+            getCurrentAddress()
         } else {
-            // TODO: show alert
             showAlert(title: viewModel.errorTitle ?? "", message: viewModel.errorMessage ?? "")
         }
     }
@@ -125,6 +125,16 @@ class MapViewController: UIViewController, MapDisplayLogic {
 
     func displayCenterMap(viewModel: Map.CenterMap.ViewModel) {
         mapView.setCenter(viewModel.coordinate, animated: true)
+    }
+
+    func getCurrentAddress() {
+        let request = Map.getCurrentAddress.Request()
+        interactor?.getCurrentAddress(request: request)
+    }
+
+    func displayCurrentAddress(viewModel: Map.getCurrentAddress.ViewModel) {
+
+        getCurrentAddressButton.isEnabled = viewModel.success
     }
 
 }
