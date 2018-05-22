@@ -30,5 +30,3 @@ class CurrentAddressTestHelpers: XCTestCase {
     }
 
 }
-
-Left off testing video 3

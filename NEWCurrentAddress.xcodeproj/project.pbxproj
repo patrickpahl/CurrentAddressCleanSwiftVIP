@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3114A2920B45CDC0031BECD /* PlacemarkViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3114A2520B45CDC0031BECD /* PlacemarkViewControllerTests.swift */; };
+		A3114A2A20B45CDC0031BECD /* PlacemarkInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3114A2620B45CDC0031BECD /* PlacemarkInteractorTests.swift */; };
+		A3114A2B20B45CDC0031BECD /* PlacemarkWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3114A2720B45CDC0031BECD /* PlacemarkWorkerTests.swift */; };
+		A3114A2C20B45CDC0031BECD /* PlacemarkPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3114A2820B45CDC0031BECD /* PlacemarkPresenterTests.swift */; };
 		A33A6E6620B35EA30088D6F3 /* PlacemarkPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33A6E6020B35EA30088D6F3 /* PlacemarkPresenter.swift */; };
 		A33A6E6720B35EA30088D6F3 /* PlacemarkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33A6E6120B35EA30088D6F3 /* PlacemarkWorker.swift */; };
 		A33A6E6820B35EA30088D6F3 /* PlacemarkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33A6E6220B35EA30088D6F3 /* PlacemarkRouter.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3114A2520B45CDC0031BECD /* PlacemarkViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkViewControllerTests.swift; sourceTree = "<group>"; };
+		A3114A2620B45CDC0031BECD /* PlacemarkInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkInteractorTests.swift; sourceTree = "<group>"; };
+		A3114A2720B45CDC0031BECD /* PlacemarkWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkWorkerTests.swift; sourceTree = "<group>"; };
+		A3114A2820B45CDC0031BECD /* PlacemarkPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkPresenterTests.swift; sourceTree = "<group>"; };
 		A33A6E6020B35EA30088D6F3 /* PlacemarkPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkPresenter.swift; sourceTree = "<group>"; };
 		A33A6E6120B35EA30088D6F3 /* PlacemarkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkWorker.swift; sourceTree = "<group>"; };
 		A33A6E6220B35EA30088D6F3 /* PlacemarkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkRouter.swift; sourceTree = "<group>"; };
@@ -80,6 +88,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3114A2320B45CA50031BECD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A3114A2420B45CB30031BECD /* Placemark */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A3114A2420B45CB30031BECD /* Placemark */ = {
+			isa = PBXGroup;
+			children = (
+				A3114A2520B45CDC0031BECD /* PlacemarkViewControllerTests.swift */,
+				A3114A2620B45CDC0031BECD /* PlacemarkInteractorTests.swift */,
+				A3114A2720B45CDC0031BECD /* PlacemarkWorkerTests.swift */,
+				A3114A2820B45CDC0031BECD /* PlacemarkPresenterTests.swift */,
+			);
+			path = Placemark;
+			sourceTree = "<group>";
+		};
 		A33A6E5F20B35E7A0088D6F3 /* Placemark */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +123,7 @@
 		A39AB8B620B38353005A322C /* NEWCurrentAddressTests */ = {
 			isa = PBXGroup;
 			children = (
+				A3114A2320B45CA50031BECD /* Scenes */,
 				A39AB8B720B38353005A322C /* NEWCurrentAddressTests.swift */,
 				A39AB8C120B38577005A322C /* CurrentAddressTestHelpers.swift */,
 				A39AB8B920B38353005A322C /* Info.plist */,
@@ -268,7 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A39AB8C220B38577005A322C /* CurrentAddressTestHelpers.swift in Sources */,
+				A3114A2C20B45CDC0031BECD /* PlacemarkPresenterTests.swift in Sources */,
+				A3114A2B20B45CDC0031BECD /* PlacemarkWorkerTests.swift in Sources */,
 				A39AB8B820B38353005A322C /* NEWCurrentAddressTests.swift in Sources */,
+				A3114A2920B45CDC0031BECD /* PlacemarkViewControllerTests.swift in Sources */,
+				A3114A2A20B45CDC0031BECD /* PlacemarkInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
