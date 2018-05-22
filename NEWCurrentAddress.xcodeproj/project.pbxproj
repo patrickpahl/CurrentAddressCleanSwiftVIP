@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3114A2920B45CDC0031BECD /* PlacemarkViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3114A2520B45CDC0031BECD /* PlacemarkViewControllerTests.swift */; };
+		A3114A2A20B45CDC0031BECD /* PlacemarkInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3114A2620B45CDC0031BECD /* PlacemarkInteractorTests.swift */; };
+		A3114A2B20B45CDC0031BECD /* PlacemarkWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3114A2720B45CDC0031BECD /* PlacemarkWorkerTests.swift */; };
+		A3114A2C20B45CDC0031BECD /* PlacemarkPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3114A2820B45CDC0031BECD /* PlacemarkPresenterTests.swift */; };
 		A33A6E6620B35EA30088D6F3 /* PlacemarkPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33A6E6020B35EA30088D6F3 /* PlacemarkPresenter.swift */; };
 		A33A6E6720B35EA30088D6F3 /* PlacemarkWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33A6E6120B35EA30088D6F3 /* PlacemarkWorker.swift */; };
 		A33A6E6820B35EA30088D6F3 /* PlacemarkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33A6E6220B35EA30088D6F3 /* PlacemarkRouter.swift */; };
 		A33A6E6920B35EA30088D6F3 /* PlacemarkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33A6E6320B35EA30088D6F3 /* PlacemarkModels.swift */; };
 		A33A6E6A20B35EA30088D6F3 /* PlacemarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33A6E6420B35EA30088D6F3 /* PlacemarkViewController.swift */; };
 		A33A6E6B20B35EA30088D6F3 /* PlacemarkInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33A6E6520B35EA30088D6F3 /* PlacemarkInteractor.swift */; };
+		A39AB8B820B38353005A322C /* NEWCurrentAddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39AB8B720B38353005A322C /* NEWCurrentAddressTests.swift */; };
+		A39AB8C220B38577005A322C /* CurrentAddressTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39AB8C120B38577005A322C /* CurrentAddressTestHelpers.swift */; };
 		A3D9FF6A20AF746C0088AE19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D9FF6920AF746C0088AE19 /* AppDelegate.swift */; };
 		A3D9FF6F20AF746C0088AE19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D9FF6D20AF746C0088AE19 /* Main.storyboard */; };
 		A3D9FF7120AF746C0088AE19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D9FF7020AF746C0088AE19 /* Assets.xcassets */; };
@@ -25,13 +31,31 @@
 		A3D9FF8920AF77C60088AE19 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D9FF8320AF77C60088AE19 /* MapInteractor.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A39AB8BA20B38353005A322C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3D9FF5E20AF746C0088AE19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3D9FF6520AF746C0088AE19;
+			remoteInfo = NEWCurrentAddress;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A3114A2520B45CDC0031BECD /* PlacemarkViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkViewControllerTests.swift; sourceTree = "<group>"; };
+		A3114A2620B45CDC0031BECD /* PlacemarkInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkInteractorTests.swift; sourceTree = "<group>"; };
+		A3114A2720B45CDC0031BECD /* PlacemarkWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkWorkerTests.swift; sourceTree = "<group>"; };
+		A3114A2820B45CDC0031BECD /* PlacemarkPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkPresenterTests.swift; sourceTree = "<group>"; };
 		A33A6E6020B35EA30088D6F3 /* PlacemarkPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkPresenter.swift; sourceTree = "<group>"; };
 		A33A6E6120B35EA30088D6F3 /* PlacemarkWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkWorker.swift; sourceTree = "<group>"; };
 		A33A6E6220B35EA30088D6F3 /* PlacemarkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkRouter.swift; sourceTree = "<group>"; };
 		A33A6E6320B35EA30088D6F3 /* PlacemarkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkModels.swift; sourceTree = "<group>"; };
 		A33A6E6420B35EA30088D6F3 /* PlacemarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkViewController.swift; sourceTree = "<group>"; };
 		A33A6E6520B35EA30088D6F3 /* PlacemarkInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacemarkInteractor.swift; sourceTree = "<group>"; };
+		A39AB8B520B38353005A322C /* NEWCurrentAddressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NEWCurrentAddressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39AB8B720B38353005A322C /* NEWCurrentAddressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEWCurrentAddressTests.swift; sourceTree = "<group>"; };
+		A39AB8B920B38353005A322C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39AB8C120B38577005A322C /* CurrentAddressTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAddressTestHelpers.swift; sourceTree = "<group>"; };
 		A3D9FF6620AF746C0088AE19 /* NEWCurrentAddress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEWCurrentAddress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D9FF6920AF746C0088AE19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3D9FF6E20AF746C0088AE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +71,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A39AB8B220B38353005A322C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3D9FF6320AF746C0088AE19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,6 +88,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3114A2320B45CA50031BECD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A3114A2420B45CB30031BECD /* Placemark */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A3114A2420B45CB30031BECD /* Placemark */ = {
+			isa = PBXGroup;
+			children = (
+				A3114A2520B45CDC0031BECD /* PlacemarkViewControllerTests.swift */,
+				A3114A2620B45CDC0031BECD /* PlacemarkInteractorTests.swift */,
+				A3114A2720B45CDC0031BECD /* PlacemarkWorkerTests.swift */,
+				A3114A2820B45CDC0031BECD /* PlacemarkPresenterTests.swift */,
+			);
+			path = Placemark;
+			sourceTree = "<group>";
+		};
 		A33A6E5F20B35E7A0088D6F3 /* Placemark */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,10 +120,22 @@
 			path = Placemark;
 			sourceTree = "<group>";
 		};
+		A39AB8B620B38353005A322C /* NEWCurrentAddressTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3114A2320B45CA50031BECD /* Scenes */,
+				A39AB8B720B38353005A322C /* NEWCurrentAddressTests.swift */,
+				A39AB8C120B38577005A322C /* CurrentAddressTestHelpers.swift */,
+				A39AB8B920B38353005A322C /* Info.plist */,
+			);
+			path = NEWCurrentAddressTests;
+			sourceTree = "<group>";
+		};
 		A3D9FF5D20AF746C0088AE19 = {
 			isa = PBXGroup;
 			children = (
 				A3D9FF6820AF746C0088AE19 /* NEWCurrentAddress */,
+				A39AB8B620B38353005A322C /* NEWCurrentAddressTests */,
 				A3D9FF6720AF746C0088AE19 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				A3D9FF6620AF746C0088AE19 /* NEWCurrentAddress.app */,
+				A39AB8B520B38353005A322C /* NEWCurrentAddressTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +195,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A39AB8B420B38353005A322C /* NEWCurrentAddressTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39AB8BE20B38353005A322C /* Build configuration list for PBXNativeTarget "NEWCurrentAddressTests" */;
+			buildPhases = (
+				A39AB8B120B38353005A322C /* Sources */,
+				A39AB8B220B38353005A322C /* Frameworks */,
+				A39AB8B320B38353005A322C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A39AB8BB20B38353005A322C /* PBXTargetDependency */,
+			);
+			name = NEWCurrentAddressTests;
+			productName = NEWCurrentAddressTests;
+			productReference = A39AB8B520B38353005A322C /* NEWCurrentAddressTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A3D9FF6520AF746C0088AE19 /* NEWCurrentAddress */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3D9FF7820AF746C0088AE19 /* Build configuration list for PBXNativeTarget "NEWCurrentAddress" */;
@@ -159,6 +240,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Patrick Pahl";
 				TargetAttributes = {
+					A39AB8B420B38353005A322C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A3D9FF6520AF746C0088AE19;
+					};
 					A3D9FF6520AF746C0088AE19 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -179,11 +265,19 @@
 			projectRoot = "";
 			targets = (
 				A3D9FF6520AF746C0088AE19 /* NEWCurrentAddress */,
+				A39AB8B420B38353005A322C /* NEWCurrentAddressTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A39AB8B320B38353005A322C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3D9FF6420AF746C0088AE19 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,6 +291,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A39AB8B120B38353005A322C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39AB8C220B38577005A322C /* CurrentAddressTestHelpers.swift in Sources */,
+				A3114A2C20B45CDC0031BECD /* PlacemarkPresenterTests.swift in Sources */,
+				A3114A2B20B45CDC0031BECD /* PlacemarkWorkerTests.swift in Sources */,
+				A39AB8B820B38353005A322C /* NEWCurrentAddressTests.swift in Sources */,
+				A3114A2920B45CDC0031BECD /* PlacemarkViewControllerTests.swift in Sources */,
+				A3114A2A20B45CDC0031BECD /* PlacemarkInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3D9FF6220AF746C0088AE19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +326,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A39AB8BB20B38353005A322C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3D9FF6520AF746C0088AE19 /* NEWCurrentAddress */;
+			targetProxy = A39AB8BA20B38353005A322C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		A3D9FF6D20AF746C0088AE19 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -239,6 +354,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A39AB8BC20B38353005A322C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7V9H5ZK35E;
+				INFOPLIST_FILE = NEWCurrentAddressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Patrick-Pahl.NEWCurrentAddressTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NEWCurrentAddress.app/NEWCurrentAddress";
+			};
+			name = Debug;
+		};
+		A39AB8BD20B38353005A322C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7V9H5ZK35E;
+				INFOPLIST_FILE = NEWCurrentAddressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Patrick-Pahl.NEWCurrentAddressTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NEWCurrentAddress.app/NEWCurrentAddress";
+			};
+			name = Release;
+		};
 		A3D9FF7620AF746C0088AE19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -379,6 +526,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A39AB8BE20B38353005A322C /* Build configuration list for PBXNativeTarget "NEWCurrentAddressTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39AB8BC20B38353005A322C /* Debug */,
+				A39AB8BD20B38353005A322C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A3D9FF6120AF746C0088AE19 /* Build configuration list for PBXProject "NEWCurrentAddress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

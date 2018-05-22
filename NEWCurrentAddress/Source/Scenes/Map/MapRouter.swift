@@ -52,8 +52,8 @@ class MapRouter: NSObject, MapRoutingLogic, MapDataPassing {
     //}
 
     func passDataToPlacemarkVC(source: MapDataStore, destination: inout PlacemarkDataStore) {
-        // ***Needs to be inout bc we're going to set something on the datastore,
-        // it's why we have the placemark in the dataStore protocol as a { get set }
+        /// ***Needs to be inout bc we're going to set something on the datastore,
+        /// it's why we have the placemark in the dataStore protocol as a { get set }
       destination.placemark = source.placemark
     }
 }
