@@ -83,38 +83,9 @@ class PlacemarkViewController: UITableViewController, PlacemarkDisplayLogic {
 
     func displayShowPhysicalAddress(viewModel: Placemark.ShowPhysicalAddress.ViewModel) {
 
-        /*
-        var cell = tableView(tableView, cellForRowAt: IndexPath(row: 0, section: 0))
-        cell.detailTextLabel?.text = viewModel.placemark.thoroughfare
-
-        cell = tableView(tableView, cellForRowAt: IndexPath(row: 1, section: 0))
-        cell.detailTextLabel?.text = viewModel.placemark.subThoroughfare
-
-        cell = tableView(tableView, cellForRowAt: IndexPath(row: 2, section: 0))
-        cell.detailTextLabel?.text = viewModel.placemark.locality
-
-        cell = tableView(tableView, cellForRowAt: IndexPath(row: 3, section: 0))
-        cell.detailTextLabel?.text = viewModel.placemark.subLocality
-
-        cell = tableView(tableView, cellForRowAt: IndexPath(row: 4, section: 0))
-        cell.detailTextLabel?.text = viewModel.placemark.administrativeArea
-
-        cell = tableView(tableView, cellForRowAt: IndexPath(row: 5, section: 0))
-        cell.detailTextLabel?.text = viewModel.placemark.subAdministrativeArea
-
-        cell = tableView(tableView, cellForRowAt: IndexPath(row: 6, section: 0))
-        cell.detailTextLabel?.text = viewModel.placemark.postalCode
-
-        cell = tableView(tableView, cellForRowAt: IndexPath(row: 7, section: 0))
-        cell.detailTextLabel?.text = viewModel.placemark.countryCode
-
-        cell = tableView(tableView, cellForRowAt: IndexPath(row: 8, section: 0))
-        cell.detailTextLabel?.text = viewModel.placemark.isoCountryCode
-         */
         self.viewModel = viewModel
         tableView.reloadData()
     }
-
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 9
