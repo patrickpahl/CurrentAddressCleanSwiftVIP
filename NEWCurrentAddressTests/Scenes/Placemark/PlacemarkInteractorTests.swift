@@ -39,8 +39,8 @@ class PlacemarkInteractorTests: XCTestCase {
 
     func testShowPhysicalAddress() {
         // Given
-        let placemarkPresentationLogicSpy = PlacemarkPresentationLogicSpy()
-        sut.presenter = placemarkPresentationLogicSpy
+        let spy = PlacemarkPresentationLogicSpy()
+        sut.presenter = spy
         sut.placemark = CurrentAddressTestHelpers.placemark
         let request = Placemark.ShowPhysicalAddress.Request()
 
@@ -48,7 +48,7 @@ class PlacemarkInteractorTests: XCTestCase {
         sut.showPhysicalAddress(request: request)
 
         // Then
-        XCTAssertTrue(placemarkPresentationLogicSpy.presentShowPhysicalAddressCalled, "ShowPhysicalAddress() should ask the presenter to format the result")
+        XCTAssertTrue(spy.presentShowPhysicalAddressCalled, "ShowPhysicalAddress() should ask the presenter to format the result")
     }
 
 }

@@ -13,7 +13,6 @@ class CurrentAddressTestHelpers: XCTestCase {
     static var placemark: MKPlacemark {
 
         let addressDictionary: [String: Any] = [
-
             kABPersonAddressStreetKey as String: "Infinite Loop",
             "SubThoroughfare": "1",
             kABPersonAddressCityKey as String: "Cupertino",
